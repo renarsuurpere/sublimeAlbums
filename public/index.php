@@ -23,4 +23,6 @@ $app = AppFactory::create();
 
 $app->get('/', 'App\Controller\AlbumsController:default');
 
+$app->get('/search', 'App\Controller\AlbumsController:search');
+
 $app->run();
